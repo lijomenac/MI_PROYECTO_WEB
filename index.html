@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Odontológica</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Clínica Dental Sonrisa</h1>
+        <p>Agenda tu cita odontológica</p>
+    </header>
+
+    <main>
+
+        <section class="contenedor">
+
+            <h2>Solicitar una cita</h2>
+
+            <form>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre"
+                        placeholder="Ej. Laura Gómez"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input 
+                        type="tel" 
+                        id="telefono" 
+                        name="telefono"
+                        placeholder="300 123 4567"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo"
+                        placeholder="correo@ejemplo.com"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="servicio">Tipo de consulta</label>
+
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="valoracion">Valoración general</option>
+                        <option value="limpieza">Limpieza dental</option>
+                        <option value="ortodoncia">Ortodoncia</option>
+                        <option value="blanqueamiento">Blanqueamiento</option>
+                        <option value="urgencia">Urgencia odontológica</option>
+                    </select>
+                </div>
+
+                <div class="fila">
+
+                    <div class="grupo">
+                        <label for="fecha">Fecha</label>
+                        <input 
+                            type="date" 
+                            id="fecha" 
+                            name="fecha"
+                            required>
+                    </div>
+
+                    <div class="grupo">
+                        <label for="hora">Hora</label>
+                        <input 
+                            type="time" 
+                            id="hora" 
+                            name="hora"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="grupo">
+                    <label for="mensaje">Observaciones</label>
+
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje"
+                        rows="4"
+                        placeholder="Escribe alguna información adicional...">
+                    </textarea>
+                </div>
+
+                <button type="submit">Agendar cita</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Clínica Dental Sonrisa | Agenda de citas</p>
+    </footer>
+
+</body>
+
+</html>
